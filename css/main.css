@@ -62,6 +62,9 @@ button {
 
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 body {
@@ -74,9 +77,18 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
 .header__logo {
@@ -95,9 +107,6 @@ body {
 .logo__text {
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 .contact-nav {
@@ -184,7 +193,7 @@ body {
 .modal .modal-title {
   font-weight: 700;
   font-size: 20px;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
   color: var(--primary-text-color);
   margin-bottom: 12px;
 }
@@ -221,11 +230,11 @@ body {
 }
 
 .modal-field input {
-  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
+  width: 100%;
   margin: auto;
   height: 40px;
   cursor: pointer;
@@ -243,11 +252,11 @@ body {
   .modal-field input:focus {
   } */
 .modal-field label {
-  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  margin-bottom: 4px;
   color: var(--title-text-color);
 }
 
@@ -303,7 +312,7 @@ body {
   padding-top: 5px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -322,11 +331,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 30px;
-  text-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-bottom: 30px;
+  text-align: center;
   color: var(--title-text-color);
 }
 .checkbox-label .link-modal {
@@ -592,14 +601,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: start;
-}
-.main-nav .site-nav {
-  display: flex;
-  margin-left: 93px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.main-nav .site-nav {
+  display: flex;
+  margin-left: 93px;
 }
 
 .site-nav__item {
@@ -710,9 +719,9 @@ header {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
-  height: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  height: 14px;
   text-transform: uppercase;
 }
 
@@ -843,20 +852,32 @@ header {
 }
 
 .section-client {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .section-client .title-client {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
 }
-.section-client .clients-logo {
+
+.clients-logo {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients-link {
+  width: 100%;
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients-link {
+    width: calc((100% - 30px) / 3);
+  }
 }
 
 .clients-logo__link {
