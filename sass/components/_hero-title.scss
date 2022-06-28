@@ -1,0 +1,17 @@
+.text-hero {
+  width: 696px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  & .hero-title {
+    @include font(900, 44px, 1.36);
+    letter-spacing: 0.06em;
+
+    color: var(--hero-text-color);
+
+    margin-bottom: 40px;
+
+    text-transform: uppercase;
+  }
+}

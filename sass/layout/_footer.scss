@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+/* BLOCK СОЦИАЛЬНЫЕ СЕТИ */
+
+/* BLOCK ФОРМА ПОДПИСАТЬСЯ */

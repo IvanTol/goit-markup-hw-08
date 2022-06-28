@@ -1,0 +1,40 @@
+.section-client {
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  & .title-client {
+    margin-bottom: 50px;
+
+    @include font(700, 36px, 1.17);
+    letter-spacing: 0.03em;
+
+    text-align: center;
+  }
+
+  & .clients-logo {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.clients-logo__link {
+  @include align-list;
+  justify-content: center;
+
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  fill: #afb1b8;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
