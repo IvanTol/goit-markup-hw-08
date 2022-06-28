@@ -14,8 +14,6 @@
 
     text-align: center;
   }
-
-  
 }
 
 .clients-logo {
@@ -25,18 +23,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  
 
   // margin-bottom: -30px;
 }
 
 .clients-link {
   width: 100%;
-  width: calc((100% - 30px) / 2);
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 30px) / 2);
+  }
   // margin-bottom: 30px;
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 3);
-}
+  }
 }
 
 .clients-logo__link {

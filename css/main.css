@@ -872,7 +872,11 @@ header {
 
 .clients-link {
   width: 100%;
-  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 480px) {
+  .clients-link {
+    width: calc((100% - 30px) / 2);
+  }
 }
 @media screen and (min-width: 768px) {
   .clients-link {
