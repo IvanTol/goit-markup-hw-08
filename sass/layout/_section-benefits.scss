@@ -1,9 +1,11 @@
 .section-benefits {
-  display: block;
+  // display: block;
   background-color: var(--primary-white-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 
   & .main-item {
     display: flex;

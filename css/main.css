@@ -90,6 +90,11 @@ body {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .header__logo {
   padding-top: 24px;
@@ -665,10 +670,9 @@ header {
 
 /* МОДАЛЬНОЕ ОКНО */
 .section-benefits {
-  display: block;
   background-color: var(--primary-white-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .section-benefits .main-item {
   display: flex;
@@ -855,6 +859,12 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section-client {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
 .section-client .title-client {
   margin-bottom: 30px;
   font-weight: 700;
@@ -862,6 +872,14 @@ header {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-client .title-client {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients-logo {
@@ -880,7 +898,12 @@ header {
 }
 @media screen and (min-width: 768px) {
   .clients-link {
-    width: calc((100% - 30px) / 3);
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-link {
+    width: calc((100% - 150px) / 6);
   }
 }
 

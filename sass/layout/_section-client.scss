@@ -1,18 +1,23 @@
 .section-client {
-  // padding-bottom: 94px;
-  // padding-top: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+
   & .title-client {
-    // margin-bottom: 50px;
     margin-bottom: 30px;
 
-    // @include font(700, 36px, 1.17);
     @include font(700, 28px, 1.18);
     letter-spacing: 0.03em;
-
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      @include font(700, 36px, 1.17);
+    }
   }
 }
 
@@ -29,12 +34,18 @@
 
 .clients-link {
   width: 100%;
+
+  // margin-bottom: 30px;
   @media screen and (min-width: 480px) {
     width: calc((100% - 30px) / 2);
   }
-  // margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
-    width: calc((100% - 30px) / 3);
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
   }
 }
 
