@@ -1,9 +1,13 @@
 .address-footer {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .link-location {
   display: inline-block;
+
   text-decoration: none;
 
   margin-bottom: 9px;
@@ -21,7 +25,6 @@
   letter-spacing: 0.03em;
 
   display: inline-block;
-
   margin-bottom: 9px;
 
   color: var(--footer-link-color);
