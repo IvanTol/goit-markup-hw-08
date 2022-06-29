@@ -992,12 +992,9 @@ header {
 
 .btn-flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.btn-flex .filter-flex:not(:last-child) {
-  margin-right: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
 }
 
 .button-filter {
