@@ -1,9 +1,15 @@
 .network-footer {
   // margin-left: 70px;
+  
   display: block;
   text-align: center;
 
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-bottom: 0;
+  }
 
   & .social-network-footer {
     display: flex;
