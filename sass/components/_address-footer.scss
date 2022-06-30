@@ -1,5 +1,5 @@
 .address-footer {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,13 +10,12 @@
 
   text-decoration: none;
 
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   color: var(--address-text-color);
 
+  @include font(400, 14px, 1.7);
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
@@ -25,7 +24,7 @@
   letter-spacing: 0.03em;
 
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   color: var(--footer-link-color);
 
@@ -35,4 +34,9 @@
   &:last-child {
     margin-bottom: 0px;
   }
+}
+
+.link-mail-tel {
+  display: block;
+  text-align: center;
 }
