@@ -81,7 +81,7 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
 }
 @media screen and (min-width: 480px) {
@@ -481,6 +481,11 @@ body {
     margin-left: 115px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .logo__footer {
+    margin-left: 0;
+  }
+}
 .logo__footer .logo__text--enverse {
   color: #fff;
 }
@@ -503,6 +508,11 @@ body {
 @media screen and (min-width: 768px) {
   .list-address {
     margin-left: 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-address {
+    margin-left: 0;
   }
 }
 
@@ -537,6 +547,11 @@ body {
   display: block;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .link-mail-tel {
+    text-align: start;
+  }
+}
 
 .network-footer {
   display: block;
@@ -546,7 +561,13 @@ body {
 @media screen and (min-width: 768px) {
   .network-footer {
     display: inline-block;
+    margin-left: 195px;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .network-footer {
+    margin-left: 70px;
   }
 }
 .network-footer .social-network-footer {
@@ -563,6 +584,11 @@ body {
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+@media screen and (min-width: 1200px) {
+  .text-footer {
+    text-align: start;
+  }
 }
 
 .link-network-footer {
@@ -590,10 +616,25 @@ body {
   display: block;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .subscribe-footer {
+    margin-left: 166px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-footer {
+    margin-left: 93px;
+  }
+}
 .subscribe-footer .field-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-footer .field-footer {
+    flex-direction: row;
+  }
 }
 
 .email-inpat-footer {
@@ -617,6 +658,11 @@ body {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .email-inpat-footer {
+    width: 358px;
+  }
+}
 .email-inpat-footer:hover, .email-inpat-footer:focus {
   border-color: var(--accent-color);
   outline: none;
@@ -627,6 +673,11 @@ body {
 
 .subscribe:first-child {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe:first-child {
+    margin-bottom: 0;
+  }
 }
 
 .email-inpat-footer::placeholder {
@@ -651,6 +702,11 @@ body {
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .button-subscribe {
+    margin-left: 10px;
+  }
 }
 .button-subscribe:hover, .button-subscribe:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1042,9 +1098,22 @@ header {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0;
 }
 .footer .container {
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    flex-wrap: nowrap;
+  }
 }
 
 /* BLOCK СОЦИАЛЬНЫЕ СЕТИ */

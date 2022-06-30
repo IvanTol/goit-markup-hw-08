@@ -6,6 +6,10 @@
     margin-left: 115px;
   }
 
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
+
   & .logo__text--enverse {
     color: #fff;
   }

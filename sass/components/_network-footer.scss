@@ -8,7 +8,12 @@
 
   @media screen and (min-width: 768px) {
     display: inline-block;
+    margin-left: 195px;
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   }
 
   & .social-network-footer {
@@ -21,6 +26,10 @@
 
 .text-footer {
   display: block;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 
   @include font(700, 14px, 1.14);
 
