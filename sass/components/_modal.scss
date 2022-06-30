@@ -32,7 +32,6 @@
 
   background: var(--primary-white-color);
 
-  padding: 40px;
 
   width: 528px;
   max-height: 581px;
@@ -86,6 +85,7 @@
 /* ФОРМА МОДАЛЬНОГО ОКНА */
 
 .form {
+  padding: 40px;
   margin-bottom: 0;
 
   & .modal-field {

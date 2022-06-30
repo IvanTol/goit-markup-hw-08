@@ -13,12 +13,13 @@ header {
 
   @include font(500, 14px, 1.14);
   letter-spacing: 0.02em;
+}
 
-  & .site-nav {
-    display: flex;
+.site-nav {
+  display: none;
+  // display: flex;
 
-    margin-left: 93px;
-  }
+  margin-left: 93px;
 }
 
 .site-nav__item {
@@ -66,6 +67,127 @@ header {
 
     background-color: var(--accent-color);
   }
+}
+
+.menu-open-btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  padding: 0;
+}
+
+.menu-open-svg {
+  background: var(--primary-white-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .mobile-menu,
+  &:focus .mobile-menu {
+    fill: var(--accent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  padding: 0;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-white-color);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu-close-svg {
+}
+.mob-menu-list {
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mob-menu-link.site-nav__link--active {
+  color: var(--accent-color);
+}
+
+.mob-menu-contact {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.mob-contact-mail {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  margin-bottom: 64px;
+}
+
+.mob-contact-tel {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+
+  margin-bottom: 32px;
+}
+
+.site-nav__link {
+}
+
+.mob-contact-item {
+}
+.mob-contact-link {
+}
+.social-header {
+  display: flex;
+}
+.social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  padding-right: 10px;
+  margin-left: 10px;
+
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 /* СПИСОК КОНТАКТОВ */

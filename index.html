@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-------------------------site (header шапка)------------------------->
-    <!-- <header>
+    <header>
       <div class="container">
         <nav class="main-nav">
           <a href="./index.html" class="logo header__logo"
@@ -57,9 +57,50 @@
               >
             </li>
           </ul>
+          <button type="button" class="menu-open-btn">
+            <svg class="menu-open-svg" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
         </nav>
+
+        <div class="mob-menu">
+          <div class="container">
+            <button type="button" class="menu-close-btn">
+              <svg class="menu-close-svg" width="40" height="40">
+                <use href="./images/icons.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link site-nav__link--active" href="./index.html" target="_self"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="./portfolio.html" target="_self">Портфолио</a>
+              </li>
+              <li class="mob-menu-item"><a class="mob-menu-link" href="">Контакты</a></li>
+            </ul>
+
+            <ul class="mob-menu-contact">
+              <li class="mob-contact-item">
+                <a class="mob-contact-mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+              </li>
+              <li class="mob-menu-contact">
+                <a class="mob-contact-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+            <div class="social-header">
+              <a class="social-link" href="https://www.instagram.com/"> Instagram </a>
+              <a class="social-link" href="https://www.twitter.com/"> Twitter </a>
+              <a class="social-link" href="https://www.facebook.com/"> Facebook </a>
+              <a class="social-link" href="https://www.linkedin.com/"> Linkedin </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <!-----------hero section (секция герой)---------->
     <main>
       <section class="section-hero overlay">
@@ -75,8 +116,9 @@
                 <use href="./images/icons.svg#icon-icon-close"></use>
               </svg>
             </button>
-            <div class="modal-title">Оставьте свои данные, мы вам перезвоним</div>
+
             <form class="form">
+              <div class="modal-title">Оставьте свои данные, мы вам перезвоним</div>
               <div class="modal-field">
                 <label for="user-name" class="modal-label">Имя</label>
                 <div class="input-svg">
@@ -467,7 +509,9 @@
                 <a class="link-footer" href="mailto:info@example.com.com">info@example.com</a>
                 <br />
               </li>
-              <li class="link-mail-tel"><a class="link-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="link-mail-tel">
+                <a class="link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
@@ -502,20 +546,24 @@
           <p class="text-footer">Подпишитесь на рассылку</p>
           <form class="subscribe-form">
             <div class="field-footer">
-              <div class="subscribe"><input
-                required
-                type="email"
-                class="email-inpat-footer"
-                name="user-mail-subscribe"
-                placeholder="E-mail"
-              /></div>
-              <div class="subscribe"> <button class="button-subscribe" type="submit">
-                Подписаться
+              <div class="subscribe">
+                <input
+                  required
+                  type="email"
+                  class="email-inpat-footer"
+                  name="user-mail-subscribe"
+                  placeholder="E-mail"
+                />
+              </div>
+              <div class="subscribe">
+                <button class="button-subscribe" type="submit">
+                  Подписаться
 
-                <svg class="svg-footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button></div>
+                  <svg class="svg-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </form>
         </div>
