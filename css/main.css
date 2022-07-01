@@ -438,8 +438,8 @@ body {
 }
 .checkbox-label .link-modal {
   color: var(--accent-color);
-  margin-left: 3px;
-  border-bottom: 1px solid var(--accent-color);
+  margin-left: 4px;
+  text-decoration-line: underline;
 }
 .checkbox-label .icon-check {
   content: "";
