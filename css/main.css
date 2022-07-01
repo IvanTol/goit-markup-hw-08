@@ -271,6 +271,12 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 96%;
+    max-height: 96%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -381,7 +387,16 @@ body {
   outline: none;
 }
 
-.modal-field textarea {
+.modal-field-text label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: var(--title-text-color);
+}
+
+.modal-field-text textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -395,8 +410,13 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 350px) {
+  .modal-field-text textarea {
+    height: 40px;
+  }
+}
 
-.modal-field textarea::placeholder {
+.modal-field-text textarea::placeholder {
   padding-top: 5px;
   font-weight: 400;
   font-size: 12px;
@@ -408,7 +428,7 @@ body {
 /* .modal-field textarea:hover,
   .modal-field textarea:focus {
   } */
-.comment-user {
+.modal-field-text {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -420,6 +440,7 @@ body {
   align-items: center;
   justify-content: center;
   align-items: flex-end;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -427,6 +448,11 @@ body {
   margin-bottom: 30px;
   text-align: center;
   color: var(--title-text-color);
+}
+@media screen and (max-width: 479px) {
+  .checkbox-label {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .checkbox-label {
@@ -450,6 +476,12 @@ body {
   border-radius: 2px;
   margin-right: 8px;
   background-color: white;
+}
+@media screen and (max-width: 320px) {
+  .checkbox-label .icon-check {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
 }
 
 .checkbox {
@@ -988,10 +1020,6 @@ header {
 .social-item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.social-item:last-child {
-  margin-top: 10px;
 }
 
 .social-link {
