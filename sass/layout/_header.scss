@@ -115,11 +115,23 @@ header {
   margin-left: auto;
   border: none;
   padding: 0;
+  height: 40px;
+  background: var(--primary-white-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .menu-close-svg,
+  &:focus .menu-close-svg {
+    fill: var(--accent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .menu-close-svg {
-}
-.mob-menu-list {
+  fill: #212121;
 }
 
 .mob-menu-item:not(:last-child) {
