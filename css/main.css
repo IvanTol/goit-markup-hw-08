@@ -793,13 +793,6 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-close-btn {
-  display: block;
-  margin-left: auto;
-  border: none;
-  padding: 0;
-}
-
 .mob-menu {
   position: fixed;
   top: 0;
@@ -809,6 +802,20 @@ header {
   height: 100vh;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.mob-menu .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  padding: 0;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -857,8 +864,13 @@ header {
   margin-bottom: 32px;
 }
 
+.mob-menu-bottom {
+  margin-bottom: 48px;
+}
+
 .social-header {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social-link {

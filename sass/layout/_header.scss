@@ -91,13 +91,6 @@ header {
   }
 }
 
-.menu-close-btn {
-  display: block;
-  margin-left: auto;
-  border: none;
-  padding: 0;
-}
-
 .mob-menu {
   position: fixed;
   top: 0;
@@ -107,6 +100,21 @@ header {
   height: 100vh;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  padding: 0;
 }
 
 .menu-close-svg {
@@ -166,15 +174,13 @@ header {
   margin-bottom: 32px;
 }
 
-.site-nav__link {
+.mob-menu-bottom {
+  margin-bottom: 48px;
 }
 
-.mob-contact-item {
-}
-.mob-contact-link {
-}
 .social-header {
   display: flex;
+  flex-wrap: wrap;
 }
 .social-link {
   font-weight: 500;
