@@ -83,26 +83,28 @@ header {
 
   height: 40px;
   width: 40px;
-}
 
-@media (min-width: 768px) {
-  .menu-open-btn {
-    display: none;
-  }
-}
-
-.menu-open-svg {
   background: var(--primary-white-color);
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover .mobile-menu,
-  &:focus .mobile-menu {
+  &:hover .menu-open-svg,
+  &:focus .menu-open-svg {
     fill: var(--accent-color);
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.menu-open-svg {
+  fill: #212121;
+}
+
+@media (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
   }
 }
 
@@ -216,8 +218,6 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
-.social-item {
-}
 
 .social-item:not(:first-child) {
   margin-left: 10px;
@@ -226,6 +226,10 @@ header {
 .social-item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.social-item:last-child {
+  margin-top: 10px;
 }
 
 .social-link {
