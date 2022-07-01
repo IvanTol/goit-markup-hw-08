@@ -439,6 +439,7 @@ body {
 .checkbox-label .link-modal {
   color: var(--accent-color);
   margin-left: 3px;
+  border-bottom: 1px solid var(--accent-color);
 }
 .checkbox-label .icon-check {
   content: "";
