@@ -16,6 +16,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 
+  overflow-y: scroll;
+
   &.is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -37,12 +39,10 @@
 
   @media screen and (max-width: 479px) {
     width: 96%;
-    max-height: 96%;
   }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
-    max-height: 581px;
   }
 
   left: 50%;

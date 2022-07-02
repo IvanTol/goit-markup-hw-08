@@ -246,6 +246,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -274,13 +275,11 @@ body {
 @media screen and (max-width: 479px) {
   .modal {
     width: 96%;
-    max-height: 96%;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    max-height: 581px;
   }
 }
 .modal .modal-title {
