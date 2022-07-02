@@ -308,6 +308,10 @@
   }
 }
 
+.checkbox:focus + .icon-check {
+  border-color: var(--accent-color);
+}
+
 /* КНОПКА ФОРМЫ */
 
 .button-form {

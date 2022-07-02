@@ -507,6 +507,10 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.checkbox:focus + .icon-check {
+  border-color: var(--accent-color);
+}
+
 /* КНОПКА ФОРМЫ */
 .button-form {
   display: flex;
@@ -1444,7 +1448,8 @@ header {
 /* margin-right: 30px;
   margin-bottom: 30px; */
 .portfolio-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
 }
 .portfolio-link:hover, .portfolio-link:focus {
@@ -1515,17 +1520,35 @@ header {
   left: 50%;
   top: 50%;
   width: 100%;
-  padding: 63px 24px;
+  height: 100%;
+  padding: 77px 24px;
   list-style: none;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 768px) {
+  .submenu-portfolio {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .submenu-portfolio {
+    padding: 63px 24px;
+  }
+}
 .submenu-portfolio .text-portfolio {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--address-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .submenu-portfolio .text-portfolio {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+  }
 }
 
 .work-card {
