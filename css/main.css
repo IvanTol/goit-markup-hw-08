@@ -1525,6 +1525,16 @@ header {
   list-style: none;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 320px) {
+  .submenu-portfolio {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .submenu-portfolio {
+    padding: 77px 24px;
+  }
+}
 @media screen and (min-width: 768px) {
   .submenu-portfolio {
     padding: 49px 24px 77px 24px;
@@ -1537,16 +1547,16 @@ header {
 }
 .submenu-portfolio .text-portfolio {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--address-text-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 480px) {
   .submenu-portfolio .text-portfolio {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.55;
   }
 }
