@@ -247,34 +247,64 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="gallery">
             <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./images/img1.jpg"
-                alt="мужчина печатает на клавиатуре"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_engage_1-min.jpg    1x,
+                    ./images/desktop/d_engage_1@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/desktop/d_engage_1-min.jpg"
+                  alt="Компания №1"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="gallery__submenu">
                 <p>Десктопные приложения</p>
               </div>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./images/img2.jpg"
-                alt="смартфон возле ноутбука"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_engage_2-min.jpg    1x,
+                    ./images/desktop/d_engage_2@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/desktop/d_engage_2-min.jpg"
+                  alt="Компания №2"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="gallery__submenu">
                 <p>Мобильные приложения</p>
               </div>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./images/img3.jpg"
-                alt="изображение на планшете"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_engage_3-min.jpg    1x,
+                    ./images/desktop/d_engage_3@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/desktop/d_engage_3-min.jpg"
+                  alt="Компания №3"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="gallery__submenu">
                 <p>Дизайнерские решения</p>
               </div>
@@ -290,7 +320,40 @@
           <h2 class="command__top-text top-text top-text--dark">Наша команда</h2>
           <ul class="command__list">
             <li class="command__item">
-              <img src="./images/user1.jpg" alt="учасник команды" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_command_1-min.jpg    1x,
+                    ./images/desktop/d_command_1@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/t_command_1-min.jpg    1x,
+                    ./images/tablet/t_command_1@2x-min.jpg 2x
+                  "
+                  media="(min-width:
+                768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/m_command_1-min.jpg    1x,
+                    ./images/mobile/m_command_1@2x-min.jpg 2x
+                  "
+                  media="(min-width:
+                767px)"
+                />
+
+                <img
+                  class="command-img"
+                  src="./images/mobile/m_command_1-min.jpg"
+                  alt="Мужчина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__workers">
                 <h3 class="command__name">Игорь Демьяненко</h3>
                 <p class="command__profession">Designer</p>
@@ -330,7 +393,40 @@
               </div>
             </li>
             <li class="command__item">
-              <img src="./images/user2.jpg" alt="учасница команды" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_command_2-min.jpg    1x,
+                    ./images/desktop/d_command_2@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/t_command_2-min.jpg    1x,
+                    ./images/tablet/t_command_2@2x-min.jpg 2x
+                  "
+                  media="(min-width:
+                768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/m_command_2-min.jpg    1x,
+                    ./images/mobile/m_command_2@2x-min.jpg 2x
+                  "
+                  media="(max-width:
+                767px)"
+                />
+
+                <img
+                  class="command-img"
+                  src="./images/mobile/m_command_2-min.jpg"
+                  alt="Женщина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__workers">
                 <h3 class="command__name">Ольга Репина</h3>
                 <p class="command__profession">Frontend Developer</p>
@@ -370,7 +466,40 @@
               </div>
             </li>
             <li class="command__item">
-              <img src="./images/user3.jpg" alt="учасник команды" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_command_3-min.jpg    1x,
+                    ./images/desktop/d_command_3@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/t_command_3-min.jpg    1x,
+                    ./images/tablet/t_command_3@2x-min.jpg 2x
+                  "
+                  media="(min-width:
+                768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/m_command_3-min.jpg    1x,
+                    ./images/mobile/m_command_3@2x-min.jpg 2x
+                  "
+                  media="(max-width:
+                767px)"
+                />
+
+                <img
+                  class="command-img"
+                  src="./images/mobile/m_command_3-min.jpg"
+                  alt="Мужчина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__workers">
                 <h3 class="command__name">Николай Тарасов</h3>
                 <p class="command__profession">Marketing</p>
@@ -410,7 +539,40 @@
               </div>
             </li>
             <li class="command__item">
-              <img src="./images/user4.jpg" alt="учасник команды" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_command_4-min.jpg    1x,
+                    ./images/desktop/d_command_4@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/t_command_4-min.jpg    1x,
+                    ./images/tablet/t_command_4@2x-min.jpg 2x
+                  "
+                  media="(min-width:
+                768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/m_command_4-min.jpg    1x,
+                    ./images/mobile/m_command_4@2x-min.jpg 2x
+                  "
+                  media="(max-width:
+                767px)"
+                />
+
+                <img
+                  class="command-img"
+                  src="./images/mobile/m_command_4-min.jpg"
+                  alt="Мужчина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__workers">
                 <h3 class="command__name">Михаил Ермаков</h3>
                 <p class="command__profession">UI Designer</p>
