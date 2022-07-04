@@ -62,7 +62,6 @@ button {
 
 img {
   display: block;
-  min-width: 100%;
   height: auto;
   width: 100%;
 }
@@ -76,6 +75,10 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .container {
@@ -1458,6 +1461,11 @@ header {
 .flex-conteiner {
   width: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .flex-conteiner:first-child .work-card {
+    padding-bottom: 56px;
+  }
+}
 @media screen and (min-width: 768px) {
   .flex-conteiner {
     width: calc((100% - 30px) / 2);
@@ -1522,17 +1530,10 @@ header {
   height: 100%;
   padding: 77px 24px;
   list-style: none;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--address-text-color);
   transform: translate(-50%, -50%);
-}
-@media screen and (min-width: 320px) {
-  .submenu-portfolio {
-    padding: 49px 24px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .submenu-portfolio {
-    padding: 77px 24px;
-  }
 }
 @media screen and (min-width: 768px) {
   .submenu-portfolio {
@@ -1548,11 +1549,8 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--address-text-color);
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
   .submenu-portfolio .text-portfolio {
     font-weight: 400;
     font-size: 16px;

@@ -34,6 +34,12 @@
   // margin-bottom: 30px;
   width: 100%;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:first-child .work-card {
+      padding-bottom: 56px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
@@ -108,13 +114,15 @@
   padding: 77px 24px;
   list-style: none;
 
-  @media screen and (min-width: 320px) {
-    padding: 49px 24px;
-  }
+  letter-spacing: 0.03em;
 
-  @media screen and (min-width: 480px) {
-    padding: 77px 24px;
-  }
+  text-align: left;
+
+  color: var(--address-text-color);
+
+  // @media screen and (min-width: 320px) {
+  //   padding: 49px 24px;
+  // }
 
   @media screen and (min-width: 768px) {
     padding: 49px 24px 77px 24px;
@@ -129,14 +137,9 @@
   & .text-portfolio {
     @include font(400, 18px, 1.55);
 
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 768px) {
       @include font(400, 16px, 1.55);
     }
-
-    letter-spacing: 0.03em;
-    text-align: left;
-
-    color: var(--address-text-color);
   }
 }
 
