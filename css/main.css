@@ -608,6 +608,11 @@ body.modal-open {
     display: inline-block;
   }
 }
+@media screen and (min-width: 1200px) {
+  .address-footer {
+    margin: auto;
+  }
+}
 
 .list-address {
   margin-left: 0;
@@ -1045,35 +1050,35 @@ header {
   align-items: center;
   max-width: 480px;
   height: 400px;
-  background-image: url(/images/mobile/m_hero-min.jpg), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: url(../images/mobile/m_hero-min.jpg), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(/images/mobile/m_hero@2x-min.jpg);
+    background-image: url(../images/mobile/m_hero@2x-min.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 768px;
     height: 400px;
-    background-image: url(/images/tablet/t_hero-min.jpg), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url(../images/tablet/t_hero-min.jpg), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(/images/tablet/t_hero@2x-min.jpg);
+    background-image: url(../images/tablet/t_hero@2x-min.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
     max-width: 1600px;
     height: 600px;
-    background-image: url(/images/desktop/d_hero-min.jpg), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url(../images/desktop/d_hero-min.jpg), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(/images/desktop/d_hero@2x-min.jpg);
+    background-image: url(../images/desktop/d_hero@2x-min.jpg);
   }
 }
 
