@@ -1479,6 +1479,7 @@ header {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  height: 100%;
 }
 .portfolio-link:hover, .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1486,11 +1487,6 @@ header {
 
 .flex-conteiner {
   width: 100%;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .flex-conteiner:first-child .work-card {
-    padding-bottom: 56px;
-  }
 }
 @media screen and (min-width: 768px) {
   .flex-conteiner {
@@ -1539,7 +1535,7 @@ header {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   /* opacity: 0; */
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition-property: var(--secondary-background-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1586,6 +1582,7 @@ header {
 
 .work-card {
   padding: 20px 24px;
+  flex-grow: 1;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
