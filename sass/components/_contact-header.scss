@@ -5,11 +5,14 @@
 
   margin-left: auto;
 
+  & .contact-nav__link:hover,
+  & .contact-nav__link:focus {
+    color: var(--accent-color);
+  }
+
   &__icon {
     margin-right: 8px;
   }
-
-  fill: var(--title-text-color);
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -66,11 +69,6 @@
   font-size: 14px;
   line-height: calc(14 / 12);
   letter-spacing: 0.02em;
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
 
   @media screen and (min-width: 1200px) {
     font-weight: 500;
